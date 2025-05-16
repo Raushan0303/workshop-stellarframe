@@ -33,10 +33,8 @@ export async function POST(req: NextRequest) {
     await dbConnect();
     await Registration.create({ name, email, phone, hasPaid });
     return NextResponse.json({ success: true });
-  } catch (error: any) {
-    return NextResponse.json(
-      { error: error.message || "Unknown error" },
-      { status: 500 }
-    );
+  } catch (error: unknown) {
+    const errMsg = error instanceof Error ? error.message : "Unknown error";
+    return NextResponse.json({ error: errMsg }, { status: 500 });
   }
 }

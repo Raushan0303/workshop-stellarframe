@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import Image from "next/image";
 
 export default function Home() {
   const [hasPaid, setHasPaid] = React.useState(false);
@@ -66,7 +65,7 @@ export default function Home() {
       } else {
         setMessage(data.error || "Something went wrong. Please try again.");
       }
-    } catch (err) {
+    } catch {
       setMessage("Something went wrong. Please try again.");
     } finally {
       setSubmitting(false);
@@ -185,12 +184,14 @@ export default function Home() {
                 <div className="flex items-start">
                   <span className="text-green-400 mr-2">✅</span>
                   <span>
-                    No sales pitch for any ₹50K course (we don't have one)
+                    No sales pitch for any ₹50K course (we don&apos;t have one)
                   </span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-green-400 mr-2">✅</span>
-                  <span>No "let me tell you about my life story"</span>
+                  <span>
+                    No &quot;let me tell you about my life story&quot;
+                  </span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-green-400 mr-2">✅</span>
@@ -336,7 +337,7 @@ export default function Home() {
               exact behind-the-scenes prompts I use to make my videos stand out.
             </p>
             <span className="inline-block mt-2 text-sm px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-700 rounded-full font-medium">
-              Only for live attendees — don't miss it!
+              Only for live attendees — don&apos;t miss it!
             </span>
           </div>
           {/* Hook Section */}
@@ -345,21 +346,23 @@ export default function Home() {
               🤯 Ever seen those crazy AI videos online and thought…
             </h2>
             <p className="text-lg italic max-w-3xl mx-auto mb-4">
-              "How the hell do they make these?"
+              &quot;How the hell do they make these?&quot;
             </p>
             <p className="text-orange-200 max-w-3xl mx-auto">
-              Here's the truth:
+              Here&apos;s the truth:
               <br />
-              It's not rocket science. And no, you don't need a ₹49,999 course.
+              It&apos;s not rocket science. And no, you don&apos;t need a
+              ₹49,999 course.
               <br />
               You just need the right tools, the right prompts, and someone
-              who's done it all—without flexing or selling you more at the end.
+              who&apos;s done it all—without flexing or selling you more at the
+              end.
             </p>
           </div>
-          {/* Who It's For */}
+          {/* Who It&apos;s For */}
           <div className="rounded-xl bg-white/5 backdrop-blur border border-orange-700/20 p-8 shadow-lg">
             <h2 className="text-2xl font-semibold mb-4">
-              ⚡ This Workshop Is For You If You're A:
+              ⚡ This Workshop Is For You If You&apos;re A:
             </h2>
             <ul className="space-y-2 text-orange-100">
               <li>🎨 Creator who wants to stop overpaying editors</li>
@@ -372,10 +375,10 @@ export default function Home() {
               No prior experience needed. Just curiosity.
             </p>
           </div>
-          {/* What You'll Learn */}
+          {/* What You&apos;ll Learn */}
           <div className="rounded-xl bg-white/5 backdrop-blur border border-orange-700/20 p-8 shadow-lg">
             <h2 className="text-2xl font-semibold mb-4">
-              🔒 What You'll Learn (In 3 Hours Flat):
+              🔒 What You&apos;ll Learn (In 3 Hours Flat):
             </h2>
             <ul className="space-y-2 text-orange-100">
               <li>✅ How to brainstorm & write viral scripts using ChatGPT</li>
@@ -416,18 +419,18 @@ export default function Home() {
               👋 About Your Instructor
             </h2>
             <p className="text-orange-200 max-w-3xl mx-auto">
-              Hey, I'm Naman. I run multiple content businesses and generate
-              videos using AI tools end-to-end—from writing to visuals, editing,
-              and voice.
+              Hey, I&apos;m Naman. I run multiple content businesses and
+              generate videos using AI tools end-to-end—from writing to visuals,
+              editing, and voice.
               <br />
               No team. No studio. Just systems.
               <br />
-              I've helped creators go viral, built content pipelines for brands,
-              and now I want to teach you how to do it too—without burning money
-              or time.
+              I&apos;ve helped creators go viral, built content pipelines for
+              brands, and now I want to teach you how to do it too—without
+              burning money or time.
               <br />
               <strong className="text-white">
-                This isn't theory. You'll walk out with a real video.
+                This isn&apos;t theory. You&apos;ll walk out with a real video.
               </strong>
             </p>
           </div>
@@ -436,7 +439,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-4">❓ FAQ</h2>
             <div className="space-y-4 text-orange-100">
               <div>
-                <strong>Q. I'm a total beginner. Can I still join?</strong>
+                <strong>Q. I&apos;m a total beginner. Can I still join?</strong>
                 <br />
                 Absolutely. The session is designed for beginners. Everything
                 will be explained live.
@@ -452,9 +455,9 @@ export default function Home() {
                 Nope. No pitch. No funnel. Just a workshop.
               </div>
               <div>
-                <strong>Q. What if I can't attend live?</strong>
+                <strong>Q. What if I can&apos;t attend live?</strong>
                 <br />
-                Then this one's not for you. We want action-takers, not
+                Then this one&apos;s not for you. We want action-takers, not
                 note-collectors.
               </div>
             </div>
